@@ -1,0 +1,30 @@
+[
+  {
+    "id": "240924",
+    "name": "Sample 1",
+    "amount": "10,000",
+    "details": "Lorem ipsum dolor sit amet",
+    "imageUrl": "/static/images/sample.png"
+  },
+  {
+    "id": "240922",
+    "name": "Sample 2",
+    "amount": "10,000",
+    "details": "Lorem ipsum dolor sit amet",
+    "imageUrl": "/static/images/sample.png"
+  },
+  {
+    "id": "240824",
+    "name": "Sample 3",
+    "amount": "10,000",
+    "details": "Lorem ipsum dolor sit amet",
+    "imageUrl": "/static/images/sample.png"
+  },
+  {
+    "id": "240713",
+    "name": "Sample 4",
+    "amount": "10,000",
+    "details": "Lorem ipsum dolor sit amet",
+    "imageUrl": "/static/images/sample.png"
+  }
+]

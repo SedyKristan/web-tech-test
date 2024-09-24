@@ -1,0 +1,116 @@
+/********************* Container ************************/
+
+.container {
+  /* Why GRID? Better in terms of distributing the children equally */
+  position: relative;
+  display: grid;
+  grid-gap: 64px;
+  padding: 40px 54px;
+
+  /* Large desktop - 4 columns */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* Desktop (max-width: 1440px) - 3 columns */
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Tablet (max-width: 768px) - 2 columns */
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mobile (max-width: 375px) - 1 column */
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/********************* Card ************************/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardImageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.cardLabelsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardLabelsWrapper h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.15px;
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardHelper p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20.44px;
+}
+
+.cardHelper .description {
+  color: #5f5f5f;
+  font-weight: 400;
+}
+
+/********************* Button ************************/
+
+.cardAction {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background-color: #a9a9a940;
+  border: none;
+  border-radius: 16px;
+}
+
+/********************* Message ************************/
+
+.message {
+  display: flex;
+  max-width: 982px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 8px;
+  border-left: 6px solid #107a5d;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.success {
+  border-left: 6px solid #107a5d;
+}
+
+.warning {
+  border-left: 6px solid #f9c308;
+}
+
+.danger {
+  border-left: 6px solid #d84544;
+}
+
+.info {
+  border-left: 6px solid #51a9c3;
+}
